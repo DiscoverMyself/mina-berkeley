@@ -1,43 +1,41 @@
-## Mina-Protocol-Testnet
+# Mina Berkeley Beta testnet
 
-## Referensi
+## Reference
 
-[Dokumen resmi](https://docs.minaprotocol.com/zkapps/tutorials/zkapp-ui-with-react)
+[Website](https://minaprotocol.com/)
 
-[Server Discord ](https://discord.gg/zJkqXjm8)
+[Official Docs](https://docs.minaprotocol.com/zkapps/tutorials/zkapp-ui-with-react)
 
-[Install Wallet](https://www.aurowallet.com/)
+[Discord](https://discord.gg/zJkqXjm8)
 
-[Mina Faucet](https://faucet.minaprotocol.com/)
+[Twitter](https://twitter.com/MinaProtocol)
+
+[Berkeley Faucet](https://faucet.minaprotocol.com/)
 
 [Rules Reward](https://minaprotocol.com/blog/zkspark-cohort0?_hsenc=p2ANqtz-8smwqFrO-bZbm3_8-KWLkOJEV5_-yyWKkPzNswcOViTtGGAsJ2Ixg_W6Efo0kaIah9zr_wPl3trIgYeeJwCA40SGbKOQ&_hsmi=234896730)
 
-## Persyaratan hardware & software
 
-### Persyaratan software/OS
+## Prerequisites
 
-| Komponen | Spesifikasi minimal |
-|----------|---------------------|
-|Sistem Operasi|Ubuntu 16.04|
+- [Visual Studio Code](https://code.visualstudio.com/Download)
 
-| Komponen | Spesifikasi rekomendasi |
-|----------|---------------------|
-|Sistem Operasi|Ubuntu 20.04|
+- [NodeJs](https://nodejs.org/en/download/)
 
-## Bahan Awal Yang Harus di Siapkan
+- [Git Bash](https://git-scm.com/downloads)
 
-1 . [Install Wallet](https://www.aurowallet.com/) Buat Akun dan Save Pharse Dan Ganti Jaringan ke Berkeley
+- [Auro Wallet](https://www.aurowallet.com/)
 
-2 . [Mina Faucet](https://faucet.minaprotocol.com/) Claim Faucet Masukan Address Mina Yang Kalian Dapatkan di Wallet Yang Telah Kalian Buat
 
-## 1. Open Port
+## Dependencies
+
+**a. Open Port**
 
 ```
 ufw allow 22 && ufw allow 3000
 ufw enable
 ```
 
-## 2. Instal Node Js 16 & NPM & Git
+**b. Instal Node Js 16 & NPM & Git**
 
 ```
 sudo apt update
@@ -51,7 +49,8 @@ curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 ```
 sudo apt install -y nodejs
 ```
-## 3 . Install Zkapp CLI
+
+**c. Install Zkapp CLI**
 
 ```
 git clone https://github.com/o1-labs/zkapp-cli
@@ -60,31 +59,27 @@ git clone https://github.com/o1-labs/zkapp-cli
 npm instal -g zkapp-cli@0.5.3
 ```
 
-## 4 . Create Project
+**d. Create Project**
 
 ```
 zk project 04-zkapp-browser-ui --ui next
 ```
 
-1 . pilih Yes 3x dan `Enter` Biarkan Hingga Proses Instalisasi Selesai
+**e. Create repository**
 
-## 5 . Buat Repository di Github kalian
-
-Beri Nama Samain Kasih Nama `04-zkapp-browser-ui` Setelah Selesai Membuat Repo Anda Akan Mendapatkan Command di Github Diemin, Nanti Akan di Butuhkan
-
-Balik ke VPS Kalian Jalankan : 
+in this case it named 04-zkapp-browser-ui (you can change it as you want)
 
 ```
 cd 04-zkapp-browser-ui
 ```
 ```
-git remote add origin <your-repo-url>
+git remote add origin <your_repository-url>
 ```
 ```
 git push -u origin main
 ```
 
-`<Your-Repo-Url>` = Check di Repository Yang Sudah Kalian Buat
+`<your_repository-url>` paste your github repository url
 
 Lalu Nanti Anda Akan di Mintai Username dan Juga Password Github Anda (Jika Terjadi Error) Anda Harus Membuat Token Acces Sebagian Pengganti Password Nya, Caranya : 
 
