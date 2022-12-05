@@ -1,0 +1,64 @@
+.mainContainer {
+  display: flex;
+  color: orangered;
+  justify-content: center;
+  width: 100%;
+  margin-top: 64px;
+}
+
+.dataContainer {
+  display: flex;
+  color: blue;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.header {
+  text-align: center;
+  color: greenyellow;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.bio {
+  text-align: center;
+  color: #fdfcfc;
+  margin-top: 16px;
+}
+
+.waveButton {
+  background: #595959;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  border: 4;
+  border-radius: 7px;
+}
+
+body {
+  background: img src="https://i.pinimg.com/originals/1c/26/da/1c26daa5c0c329cdaca76c684a7a1ce4.jpg";
+  font: 100% system-ui;
+}
+h1,
+p {
+color: #bad204;
+font-size: 18px;
+}
+
+body.dark-theme {
+background: #dd6a2c;
+}
+body.dark-theme h1,
+body.dark-theme p {
+color: #4b4949;
+}
+body.dark-theme a {
+color: #809fff;
+}
+  
+}
