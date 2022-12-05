@@ -10,7 +10,7 @@
 <a href="https://docs.minaprotocol.com/zkapps/tutorials/zkapp-ui-with-react" target="_blank">MINA PROTOCOL</a>
 
 
-#ZKAPP UI TUTORIAL
+# ZKAPP UI TUTORIAL
 
 ## Prerequisites
 - [Website](https://minaprotocol.com/)
